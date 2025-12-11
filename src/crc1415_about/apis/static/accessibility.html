@@ -129,14 +129,33 @@
   border-top: 1px solid #ccc;
   margin: 20px 0;
 }
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
+.button-image {
+  width: 50px; /* adjust the width of the image */
+  height: 50px; /* adjust the height of the image */
+  border-radius: 10%; /* make the image circular */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* add a shadow to the image */
+}
+
+.floating-button:hover .button-image {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* increase the shadow on hover */
+}
   </style>
 </head>
 <body>
 <div class="nomad-section">
    <h2 class="section-title">
     Erklärung zur Barrierefreiheit</br>für die NOMAD Oasis CRC1415
-    <img src="CRC1415.png" alt="Image" class="section-title-image">
+    <a href="https://tu-dresden.de/mn/chemie/sfb1415/der-sfb"> <img src="CRC1415.png" alt="Image" class="section-title-image"> </a>
   </h2>
   <p class="nomad-related-docs">Verwandte Dokumente: <a href="./terms.html">Nutzungsbedingung</a> <a href="./privacy.html">Datenschutzerklärung und Impressum</a></p>
   <div class="section-description">
@@ -230,6 +249,8 @@
             <li><a href="https://tu-dresden.de/mn/chemie/sfb1415/der-sfb">Homepage CRC1415</a></li>
         </ul>
     </footer>
-
+<a href="https://oasis-crc1415.zih.tu-dresden.de/nomad-oasis/gui/about/information" class="floating-button">
+  <img src="CRC1415Oasis.png" alt="Image" class="button-image">
+</a>
 </body>
 </html>
