@@ -26,6 +26,7 @@ maintainers = [
 license = { file = "LICENSE" }
 dependencies = [
     "nomad-lab>=1.4.0",
+    "fastapi>=0.115.12",
     
 ]
 
@@ -129,10 +130,7 @@ package-dir = { "" = "src" }
 where = ["src"]
 
 [project.entry-points.'nomad.plugin']
-
-
-
-
+crc1415_about_footer_pages = "crc1415_about.apis:crc1415_about_footer_pages"
 
 
 [tool.cruft]

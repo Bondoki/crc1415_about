@@ -112,6 +112,10 @@ We now recommend using the dedicated [`nomad-distro-dev`](https://github.com/FAI
 
 We use [`cruft`](https://github.com/cruft/cruft) to update the project based on template changes. To run the check for updates locally, run `cruft update` in the root of the project. More details see the instructions on [`cruft` website](https://cruft.github.io/cruft/#updating-a-project).
 
+### Acknowledgment
+
+A big thanks to Laurenz Rettig as this code is based on its API implementation; see [oasis_optimal_footer_pages](https://github.com/rettigl/oasis_optimal_footer_pages).
+
 ## Main contributors
 | Name | E-mail     |
 |------|------------|
